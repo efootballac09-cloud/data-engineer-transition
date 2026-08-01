@@ -1,4 +1,4 @@
-select count(*) as Inavlid_records,
+SELECT COUNT(*) AS invalid_records,
 agency,
 complaint_type,
 borough , 
