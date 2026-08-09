@@ -8,7 +8,7 @@ Data Engineer with strong SQL, Python, Spark, data modelling, orchestration, tes
 
 ## Current phase
 
-Week 1: local development setup, SQL baseline, Python baseline, and City Operations data-model design.
+Week 2: SQL/Python foundation work and City Operations metric validation.
 
 ## Local setup
 
@@ -20,7 +20,7 @@ python -m pytest
 
 ```
 
-> **Setup verification:** These commands reflect the initial Week 1 setup. A fresh-terminal verification is pending because the local Python installation and existing virtual environment need repair. This will be completed during `d06`.
+> **Setup verification:** A fresh-terminal run completed successfully with Python 3.12, the smoke test passing, and the bounded 50,000-row extract loading into DuckDB.
 
 ## Week 1 evidence
 
@@ -30,6 +30,14 @@ python -m pytest
 - [Clean-layer rules](docs/city_ops_clean_layer_rules.md)
 - [NYC 311 load script](scripts/load_311.py)
 - [Smoke test](tests/test_smoke.py)
+
+## Week 2 SQL evidence
+
+- [Complaint mix by borough](01_sql/diagnostics/w2_complaint_mix_by_borough.sql)
+- [Grouped-count reconciliation](01_sql/diagnostics/w2_complaint_mix_validation.sql)
+- [Complaint-share validation](01_sql/diagnostics/w2_complaint_share_validation.sql)
+- [Leading complaint types by borough](01_sql/diagnostics/w2_top_complaint_by_borough.sql)
+- [Complaint-mix findings](docs/week2_complaint_mix_findings.md)
 
 ## Dataset scope
 
